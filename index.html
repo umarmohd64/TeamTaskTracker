@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <title>Team Task Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Team Task Tracker</h1>
+
+    <div class="task-form">
+      <!-- Task input -->
+      <input type="text" id="taskName" placeholder="Enter task" />
+
+      <!-- Custom dropdown -->
+      <div class="custom-dropdown">
+        <div class="dropdown-button" id="dropdownBtn">Select member</div>
+        <div class="dropdown-options" id="personDropdown">
+          <div class="dropdown-option">Umar</div>
+          <div class="dropdown-option">Asad</div>
+          <div class="dropdown-option">Peter</div>
+          <div class="dropdown-option">Rishabh</div>
+          <div class="dropdown-option">Luke</div>
+          <div class="dropdown-option">Nitin</div>
+          <div class="dropdown-option">Piyush</div>
+
+        </div>
+      </div>
+
+      <!-- Hidden field for storing selected value -->
+      <input type="hidden" id="assignedToHidden" />
+
+      <button id="addBtn">Add Task</button>
+    </div>
+
+    <!-- Task list output -->
+    <ul id="taskList"></ul>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
